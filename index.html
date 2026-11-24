@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ЗАМЕТКА ДЛЯ CLAUDE (версия 0.1.21): проект Engladder. Структура: index.html (разметка) + css/styles.css + js/data.js (только данные) + js/app.js (логика). Порядок скриптов: data.js, затем app.js; обычные скрипты, не модули (должно открываться по file://). Правила и статус: COURSE_HANDOFF_*.md, журнал: COURSE_CHANGELOG.md. Править точечно (python replace с assert count==1), после правок node --check и course-qa-gate. -->
+<!-- ЗАМЕТКА ДЛЯ CLAUDE (версия 0.1.22): проект Engladder. Структура: index.html (разметка) + css/styles.css + js/data/* (только данные: core, units/, bank/, reference, glossary) + js/app.js (логика). Порядок скриптов: сначала js/data/core.js, потом данные, js/app.js последним; обычные скрипты, не модули (должно открываться по file://). Правила и статус: COURSE_HANDOFF_*.md, журнал: COURSE_CHANGELOG.md. Править точечно (python replace с assert count==1), после правок node --check и course-qa-gate. -->
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Engladder: полный курс английского (офлайн)</title>
@@ -7,5 +7,39 @@
 <h1>🇬🇧 Engladder: полный курс английского</h1>
 <div class="bar"><i id="pb"></i></div><div class="m" id="pt"></div>
 <div class="m">🔊 Голос: <select id="vs"></select> Скорость: <select id="vr"><option value="0.7">медленно</option><option value="0.85">обычно</option><option value="1">быстро</option></select></div><nav id="nav"></nav><nav id="sub"></nav><div id="v"></div></div>
-<div id="gl"></div><script src="js/data.js"></script>
+<div id="gl"></div><script src="js/data/core.js"></script>
+<script src="js/data/units/a1-u01.js"></script>
+<script src="js/data/units/a1-u02.js"></script>
+<script src="js/data/units/a1-u03.js"></script>
+<script src="js/data/units/a1-u04.js"></script>
+<script src="js/data/units/a1-u05.js"></script>
+<script src="js/data/units/a1-u06.js"></script>
+<script src="js/data/units/a1-u07.js"></script>
+<script src="js/data/units/a1-u08.js"></script>
+<script src="js/data/units/a1-u09.js"></script>
+<script src="js/data/units/a1-u10.js"></script>
+<script src="js/data/units/a1-r1.js"></script>
+<script src="js/data/units/a1-u11.js"></script>
+<script src="js/data/units/a1-u12.js"></script>
+<script src="js/data/units/a1-u13.js"></script>
+<script src="js/data/units/a1-u14.js"></script>
+<script src="js/data/units/a1-r2.js"></script>
+<script src="js/data/units-finish.js"></script>
+<script src="js/data/levels.js"></script>
+<script src="js/data/bank/a1-u01.js"></script>
+<script src="js/data/bank/a1-u02.js"></script>
+<script src="js/data/bank/a1-u03.js"></script>
+<script src="js/data/bank/a1-u04.js"></script>
+<script src="js/data/bank/a1-u05.js"></script>
+<script src="js/data/bank/a1-u06.js"></script>
+<script src="js/data/bank/a1-u07.js"></script>
+<script src="js/data/bank/a1-u08.js"></script>
+<script src="js/data/bank/a1-u09.js"></script>
+<script src="js/data/bank/a1-u10.js"></script>
+<script src="js/data/bank/a1-u11.js"></script>
+<script src="js/data/bank/a1-u12.js"></script>
+<script src="js/data/bank/a1-u13.js"></script>
+<script src="js/data/bank/a1-u14.js"></script>
+<script src="js/data/reference.js"></script>
+<script src="js/data/glossary.js"></script>
 <script src="js/app.js"></script></body></html>
